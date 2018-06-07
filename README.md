@@ -25,7 +25,7 @@ Example (advanced)
 To prevent the automatic rotation and also name the output file `output.pdf` in
 the `~/Downloads` folder, use this more advanced example:
 ```
-  docker run -v $HOME/Downloads:/home/docker bdominik/docker-pdfjoin -o output.pdf  --paper a4paper --rotateoversize false first.pdf second.pdf
+  docker run -v $HOME/Downloads:/home/docker bdominik/docker-pdfjoin -o output.pdf --paper a4paper --rotateoversize false first.pdf second.pdf
 ```
 
 Internals
