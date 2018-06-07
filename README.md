@@ -1,5 +1,6 @@
 docker-pdfjoin
 =============
+[![Docker Pulls](https://img.shields.io/docker/pulls/bdominik/docker-pdfjoin.svg)](https://hub.docker.com/r/bdominik/docker-pdfjoin/) [![Docker layers](https://images.microbadger.com/badges/image/bdominik/docker-pdfjoin.svg)](https://microbadger.com/images/bdominik/docker-pdfjoin) [![Github Stars](https://img.shields.io/github/stars/theomega/docker-pdfjoin.svg?label=github%20%E2%98%85)](https://github.com/theomega/docker-pdfjoin/)
 
 This docker container wraps the pdfjoin utility from the texlive latex
 distribution. See the [man page](https://linux.die.net/man/1/pdfjoin) or
