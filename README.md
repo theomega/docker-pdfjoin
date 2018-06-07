@@ -15,7 +15,7 @@ Example (simple)
 Suppose you have `~/Downloads/first.pdf` and `~/Downloads/second.pdf` which you
 want to join:
 ```
-  docker run -v $HOME/Downloads:/home/docker bdominik/pdfjoin first.pdf second.pdf
+  docker run -v $HOME/Downloads:/home/docker bdominik/docker-pdfjoin first.pdf second.pdf
 ```
 
 You can find the joined pdf in `~/Downloads/first_joined.pdf`
@@ -24,7 +24,11 @@ Example (advanced)
 ------------------
 To prevent the automatic rotation and also name the output file `output.pdf` in
 the `~/Downloads` folder, use this more advanced example:
+```
+  docker run -v $HOME/Downloads:/home/docker bdominik/docker-pdfjoin -o output.pdf  --paper a4paper --rotateoversize false first.pdf second.pdf
+```
 
-```
-  docker run -v $HOME/Downloads:/home/docker bdominik/pdfjoin -o output.pdf  --paper a4paper --rotateoversize false first.pdf second.pdf
-```
+Internals
+---------
+The image is built using the [ubuntu 18.04][https://hub.docker.com/_/ubuntu/]
+image and adding several texlive packages to get pdfjoin working.
